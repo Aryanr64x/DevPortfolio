@@ -9,7 +9,7 @@ export default function Home() {
 
     return (
 
-        <div className="hero text-white">
+        <div className="text-white" style={{backgroundImage: "url('/herobg.png')"}}>
             <Hero />
             <Skills />
             <Projects />
