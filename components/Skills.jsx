@@ -30,15 +30,15 @@ const Skills = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-3 gap-x-3 gap-y-6  mt-16 md:mt-0">
-                    <SingleSkill src="/react.png"/>
-                    <SingleSkill src="/next.png" />
-                    <SingleSkill src="/tailwind.jpg" />
-                    <SingleSkill src="/js.png" />
-                    <SingleSkill src="/node.png" />
-                    <SingleSkill src="/mongo.png" />
-                    <SingleSkill src="/html52.png" />
-                    <SingleSkill src="/css.png" />
-                    <SingleSkill src="/figma.png" />
+                    <SingleSkill src="/react.png" link="https://reactjs.org/"/>
+                    <SingleSkill src="/next.png" link="https://nextjs.org/"/>
+                    <SingleSkill src="/tailwind.jpg" link = "https://tailwindcss.com/"/>
+                    <SingleSkill src="/js.png" link="https://www.javascript.com/"/>
+                    <SingleSkill src="/node.png" link="https://nodejs.org/en/"/>
+                    <SingleSkill src="/mongo.png" link="https://www.mongodb.com/home"/>
+                    <SingleSkill src="/html52.png" link="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" />
+                    <SingleSkill src="/css.png" link="https://developer.mozilla.org/en-US/docs/Web/CSS"/>
+                    <SingleSkill src="/figma.png" link="https://www.figma.com/"/>
 
                 </div>
             </div>
