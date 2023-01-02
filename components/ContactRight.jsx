@@ -33,7 +33,7 @@ const ContactRight = ()=>{
                                 }
                             </div>) : (
 
-                            (loading) ? (<CircularProgress />) : (<button onClick={submit} className="font-semibold  mt-4 text-lg hover:opacity-80 bg-secondary text-primary rounded-sm py-1 px-2  border-secondary  hover:bg-secondary hover:text-primary transition-all duration-500">Submit</button>)
+                            (loading) ? (<p>Mark Zuckerperg</p>) : (<button onClick={submit} className="font-semibold  mt-4 text-lg hover:opacity-80 bg-secondary text-primary rounded-sm py-1 px-2  border-secondary  hover:bg-secondary hover:text-primary transition-all duration-500">Submit</button>)
 
                         )
                     }
