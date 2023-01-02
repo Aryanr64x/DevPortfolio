@@ -5,7 +5,6 @@ const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liv
     const [showText, setShowText] = useState(false)
     const r = ((reverse) ? "flex-col-reverse lg:flex-row-reverse" : "flex-col-reverse lg:flex-row");
     const classname = "flex justify-between items-center gap-8 lg:gap-20 mt-32 " + r;
-    console.log(classname)
     return (
         <div className={classname}>
             <div className="flex flex-col flex-1  justify-center items-center lg:items-start" data-aos={(reverse) ? 'fade-left' : 'fade-right'}>
@@ -28,7 +27,7 @@ const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liv
                 </div>
                 <div className="mt-16 font-sourceCodePro">
 
-                    <motion.a href={link} className="bg-secondary text-primary py-2 px-4 text-base font-semibold mr-4" whileHover={{ translateX: 20, opacity: 0.8 }} transition={{ duration: 0.5 }}>
+                    <motion.a href={codeLink} className="bg-secondary text-primary py-2 px-4 text-base font-semibold mr-4" whileHover={{ translateX: 20, opacity: 0.8 }} transition={{ duration: 0.5 }}>
                         SEE SOURCE CODE
                     </motion.a>
 

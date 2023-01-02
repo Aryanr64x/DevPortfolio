@@ -9,11 +9,11 @@ const Projects = ()=>{
             <div className="works mt-24">
                 <SingleProject
                     reverse={true}
-                    liveSite={true}
+                    liveSite={false}
                     codeLink={'https://github.com/Aryanr64x/Digimart'}
                     image={'/projects/digimart.png'}
                     name="Digimart: Digital Asset Marketplace"
-                    info="Marketing Businesses need marketing too! A professional website built for a facebook ads marketing company. The website has been highly effective in lead conversion of business. "
+                    info="This is a digital asset marketplace which has a shopping cart in frontend built with the power of ContextAPI in React. The React App uses SSG with NextJS and Stripe is used as a payment gateway"
                     tag1="NextJS"
                     tag2="Stripe"
                     tag3="NodeJS"
@@ -24,11 +24,11 @@ const Projects = ()=>{
                     codeLink={'https://github.com/Aryanr64x/nextport'}
                     image={'/projects/sakedes.png'}
                     name="Sakedes: Web Design Agency"
-                    info="Marketing Businesses need marketing too! A professional website built for a facebook ads marketing company. The website has been highly effective in lead conversion of business. "
+                    info="This is an agency website built in NextJS that uses Sanity IO , A popular Headless CMS to fetch/insert data from/into . The website also has a complete blog system and is seo friendly due to SSG in NextJS"
                     tag1="NextJS"
                     tag2="TailwindCSS"
                     tag3="Sanity CMS"
-                    link="https://neovisionmarketing.netlify.app/" />
+                    link="https://sakedes.netlify.app/" />
 
 
                 <SingleProject
@@ -37,7 +37,7 @@ const Projects = ()=>{
                     reverse={true}
                     codeLink={'https://github.com/Aryanr64x/Chatio-React-Native-Chat-App'}
                     name="Chatio: RealTime Chat App"
-                    info="Marketing Businesses need marketing too! A professional website built for a facebook ads marketing company. The website has been highly effective in lead conversion of business. "
+                    info="This is a realtime chat app built in React Native. It uses Tailwind CSS in React Native for easy styling of things and websockets for realtime communication."
                     tag1="React Native"
                     tag2="TailwindCSS"
                     tag3="Web Sockets"

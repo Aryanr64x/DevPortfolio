@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .name{
-    letter-spacing: 16px;
+    letter-spacing: 20px;
 }
 
 
@@ -14,4 +14,19 @@
     background-size: cover;
     background-attachment: fixed;
 
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .name{
+        letter-spacing: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .name{
+        letter-spacing: 4px;
+    }
 }
