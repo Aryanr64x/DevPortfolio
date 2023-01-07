@@ -43,6 +43,18 @@ const Projects = ()=>{
                     tag3="Web Sockets"
                     link="https://neovisionmarketing.netlify.app/" />
 
+                <SingleProject
+                    image={'/projects/doodlejump.png'}
+                    liveSite={true}
+                    reverse={false}
+                    codeLink={'https://github.com/Aryanr64x/DoodleSpaceJump'}
+                    name="Doodle Space Jump Game"
+                    info="This is a simple doodle jump like  game project built in javascript. The game was built without any JS Framework or Library , and explores advanced css positioning "
+                    tag1="Vanilla JS"
+                    tag2="CSS Positioning"
+                    tag3="Game"
+                    link="https://doodlespacejump.netlify.app/" />
+
 
             </div>
         </section>
