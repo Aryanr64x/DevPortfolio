@@ -9,7 +9,7 @@ const Projects = ()=>{
             <div className="works mt-24">
                 <SingleProject
                     reverse={true}
-                    liveSite={false}
+                    liveSite={true}
                     codeLink={'https://github.com/Aryanr64x/Digimart'}
                     image={'/projects/digimart.png'}
                     name="Digimart: Digital Asset Marketplace"
@@ -17,7 +17,7 @@ const Projects = ()=>{
                     tag1="NextJS"
                     tag2="Stripe"
                     tag3="NodeJS"
-                    link="https://neovisionmarketing.netlify.app/" />
+                    link="https://digimartt.netlify.app/" />
 
                 <SingleProject
                     liveSite={true}
