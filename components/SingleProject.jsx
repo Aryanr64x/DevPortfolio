@@ -1,7 +1,14 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import  { motion } from "framer-motion";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liveSite, codeLink })=>{
+    useEffect(() => {
+        AOS.init({
+            duration: 1000
+        })
+    }, [])
     const [showText, setShowText] = useState(false)
     const r = ((reverse) ? "flex-col-reverse lg:flex-row-reverse" : "flex-col-reverse lg:flex-row");
     const classname = "flex justify-between items-center gap-8 lg:gap-20 mt-32 " + r;
