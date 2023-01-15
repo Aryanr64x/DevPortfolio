@@ -1,14 +1,16 @@
-import {useEffect, useState} from "react";
-import  { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
-const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liveSite, codeLink })=>{
+const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liveSite, codeLink, videolink , hasVideoLink}) => {
     useEffect(() => {
         AOS.init({
             duration: 1000
         })
     }, [])
+
+    console.log("VIDEO LINK"+videolink)
     const [showText, setShowText] = useState(false)
     const r = ((reverse) ? "flex-col-reverse lg:flex-row-reverse" : "flex-col-reverse lg:flex-row");
     const classname = "flex justify-between items-center gap-8 lg:gap-20 mt-32 " + r;
@@ -19,31 +21,40 @@ const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liv
                     {name}
                 </div>
                 <div className="mt-4 flex">
-          <span className=" text-primary bg-tertiary font-semibold mr-4 px-2 py-1 rounded text-sm sm:text-base" >
-            {tag1}
-          </span>
+                    <span className=" text-primary bg-tertiary font-semibold mr-4 px-2 py-1 rounded text-sm sm:text-base" >
+                        {tag1}
+                    </span>
                     <span className="text-primary bg-tertiary font-semibold mr-4  px-2 py-1 rounded text-sm sm:text-base">
-            {tag2}
-          </span>
+                        {tag2}
+                    </span>
                     <span className="text-primary bg-tertiary font-semibold mr-4  px-2 py-1 rounded text-sm sm:text-base">
-            {tag3}
-          </span>
+                        {tag3}
+                    </span>
                 </div>
                 <div className="text-center sm:text-left sm:text-lg mt-8 font-sourceCodePro">
                     {info}
                 </div>
-                <div className="mt-16 font-sourceCodePro">
+                <div className="mt-16 font-sourceCodePro flex flex-wrap items-center">
 
-                    <motion.a href={codeLink} className="bg-secondary text-primary py-2 px-4 text-base font-semibold mr-4" whileHover={{ translateX: 20, opacity: 0.8 }} transition={{ duration: 0.5 }}>
+                    <motion.a href={codeLink} className="bg-secondary text-primary mt-4 py-2 px-4 text-base font-semibold mr-4" whileHover={{ translateX: 20, opacity: 0.8 }} transition={{ duration: 0.5 }}>
                         SEE SOURCE CODE
                     </motion.a>
 
                     {
-                        (liveSite)? (<motion.a href={link} className="bg-secondary text-primary py-2 px-4 text-base font-semibold mr-4" whileHover={{ translateX: 20, opacity: 0.8 }} transition={{ duration: 0.5 }}>
-                        VISIT LIVE SITE
+                        (liveSite) ? (<motion.a href={link} className="bg-secondary mt-4 text-primary py-2 px-4 text-base font-semibold mr-4" whileHover={{ translateX: 20, opacity: 0.8 }} transition={{ duration: 0.5 }}>
+                            VISIT LIVE SITE
                         </motion.a>) : ("")
                     }
 
+                    
+
+                    {
+
+                        (hasVideoLink) ? (
+                        <motion.a href={videolink} className="bg-secondary mt-4 text-primary py-2 px-4 text-base font-semibold mr-4 cursor-pointer" whileHover={{ translateX: 20, opacity: 0.8 }} transition={{ duration: 0.5 }}>
+                            SEE VIDEO 
+                        </motion.a>) : ("")
+                    }
 
 
 
@@ -52,12 +63,12 @@ const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liv
             <div className={'flex flex-col relative flex-1' + ((reverse) ? ' items-start' : ' items-end')} data-aos={(reverse) ? 'fade-right' : 'fade-left'}>
                 <a href={(liveSite) ? (link) : (codeLink)}>
                     <motion.img onMouseEnter={() => { setShowText(true) }} onMouseLeave={() => { setShowText(false) }} whileHover={{ translateX: 10, translateY: -10, opacity: 0.4 }} transition={{ duration: 0.5 }} className="h-full rounded-md cursor-pointer"
-                                src={image} alt="" />
+                        src={image} alt="" />
                     {
                         (showText) ? (
                             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="absolute top-1/2 left-1/2 -ml-24 text-xl font-bold font-sourceCodePro">
-                                { (liveSite) ? ("VISIT LIVE SITE") : ("SEE SOURCE CODE") }
-                        </motion.div>) : (<div></div>)
+                                {(liveSite) ? ("VISIT LIVE SITE") : ("SEE SOURCE CODE")}
+                            </motion.div>) : (<div></div>)
                     }
                 </a>
             </div>
@@ -65,4 +76,4 @@ const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liv
     )
 }
 
-export  default  SingleProject;
+export default SingleProject;

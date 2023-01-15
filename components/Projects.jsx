@@ -8,6 +8,8 @@ const Projects = ()=>{
             </h2>
             <div className="works mt-24">
                 <SingleProject
+                    hasVideoLink = {true}
+                    videolink={"https://youtu.be/8_DPBU-wMnQ"}
                     reverse={true}
                     liveSite={true}
                     codeLink={'https://github.com/Aryanr64x/Digimart'}
@@ -17,9 +19,10 @@ const Projects = ()=>{
                     tag1="NextJS"
                     tag2="Stripe"
                     tag3="NodeJS"
-                    link="https://digimartt.netlify.app/" />
+                    link="https://digidukaan.netlify.app/" />
 
                 <SingleProject
+                    hasVideoLink={false}
                     liveSite={true}
                     codeLink={'https://github.com/Aryanr64x/nextport'}
                     image={'/projects/sakedes.png'}
@@ -32,6 +35,8 @@ const Projects = ()=>{
 
 
                 <SingleProject
+                    hasVideoLink={true}
+                    videolink = {"https://youtu.be/8a1pxYPZQnM"}
                     image={'/projects/chatio2.png'}
                     liveSite={false}
                     reverse={true}
@@ -44,6 +49,8 @@ const Projects = ()=>{
                     link="https://neovisionmarketing.netlify.app/" />
 
                 <SingleProject
+                    hasVideoLink={true}
+                    videolink = {"https://youtu.be/5WXvpMVP2Bw"}
                     image={'/projects/doodlejump.png'}
                     liveSite={true}
                     reverse={false}
