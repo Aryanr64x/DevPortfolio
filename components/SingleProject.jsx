@@ -10,7 +10,6 @@ const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liv
         })
     }, [])
 
-    console.log("VIDEO LINK"+videolink)
     const [showText, setShowText] = useState(false)
     const r = ((reverse) ? "flex-col-reverse lg:flex-row-reverse" : "flex-col-reverse lg:flex-row");
     const classname = "flex justify-between items-center gap-8 lg:gap-20 mt-32 " + r;
@@ -68,7 +67,10 @@ const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liv
                         (showText) ? (
                             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="absolute top-1/2 left-1/2 -ml-24 text-xl font-bold font-sourceCodePro">
                                 {(liveSite) ? ("VISIT LIVE SITE") : ("SEE SOURCE CODE")}
-                            </motion.div>) : (<div></div>)
+                            </motion.div>) : (
+                            <div>
+
+                            </div>)
                     }
                 </a>
             </div>

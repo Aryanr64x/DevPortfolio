@@ -36,7 +36,7 @@ const Hero = ()=>{
                 THIS IS <span className="text-secondary"> ARYAN SAKET </span>
             </h2>
             <div className="mt-0">
-                Full Stack Web Developer and UI Designer, Looking For Internship Oppurtunities
+                Full Stack Web Developer and UI Designer, Studying Computer Science ,Currently Looking For Internship Oppurtunities
             </div>
             <div className="mt-8 flex justify-center">
                 <a href="#contact" className="bg-secondary text-primary py-2 px-4 sm:text-xl text-base font-bold mr-4 "> CONTACT ME </a>

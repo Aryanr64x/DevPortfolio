@@ -1,10 +1,11 @@
+import SingleFreelanceProject from "./SingleFreelanceProject";
 import SingleProject from "./SingleProject";
 
 const Projects = ()=>{
     return (
         <section className="mt-48 px-4 sm:px-20 xl:px-36 pb-40" id="last-works">
             <h2 className="text-3xl sm:text-5xl lg:6xl text-center font-sourceCodePro text-secondary">
-                MY PROJECTS
+                PREMIER PROJECTS
             </h2>
             <div className="works mt-24">
                 <SingleProject
@@ -64,6 +65,34 @@ const Projects = ()=>{
 
 
             </div>
+
+            <div>
+                <h2 className="text-3xl mt-64 sm:text-5xl lg:6xl text-center font-sourceCodePro text-secondary">
+                    OTHER STATIC WEBSITES/BLOG
+                </h2>
+                <div className="mt-16 grid grid-cols-2 gap-x-16 ">
+                    <SingleFreelanceProject
+                        title={"Neovision Marketing : (Client Project)"}
+                        tag1={"Agency"}
+                        tag2={"Responsive"}
+                        tag3={"Client"}
+                        info={"This was a marketing website built for a business of a client. This website followed conversion centered design , generating leads for the client"}
+                        link = {'https://neovisionmarketing.netlify.app/'}
+                        image = {'/projects/freelance/neovision.png'}
+                    />
+
+                    <SingleFreelanceProject
+                        title={"Start App Marketing Website"}
+                        tag1={"Startup"}
+                        tag2={"Marketing"}
+                        tag3={"Webflow"}
+                        info={"This is a concept website for a startup, that is built using no code website builder Webflow. This was a venture into no-code website builders world for me 😊 "}
+                        link = {'https://team-app.webflow.io/'}
+                        image = {'/projects/freelance/teamapp.png'}
+                    />
+                </div>
+            </div>
+
         </section>
     );
 }
