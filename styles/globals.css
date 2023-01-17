@@ -8,13 +8,10 @@
     letter-spacing: 20px;
 }
 
-/* 
-body{
-    background-image: url('../public/herobgfilter.png');
+.wrapper{
     background-size: cover;
     background-attachment: fixed;
-
-} */
+}
 
 
 
