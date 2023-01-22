@@ -35,12 +35,12 @@ const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liv
                 </div>
                 <div className="mt-16 font-sourceCodePro flex flex-wrap items-center">
 
-                    <motion.a href={codeLink} className="bg-secondary text-primary mt-4 py-2 px-4 text-base font-semibold mr-4" whileHover={{ translateX: 20, opacity: 0.8 }} transition={{ duration: 0.5 }}>
+                    <motion.a href={codeLink} className="bg-secondary text-primary mt-4 py-2 px-4 text-base font-semibold mr-4" whileHover={{ scale: 1.1, opacity: 0.8 }} transition={{ duration: 0.5 }}>
                         SEE SOURCE CODE
                     </motion.a>
 
                     {
-                        (liveSite) ? (<motion.a href={link} className="bg-secondary mt-4 text-primary py-2 px-4 text-base font-semibold mr-4" whileHover={{ translateX: 20, opacity: 0.8 }} transition={{ duration: 0.5 }}>
+                        (liveSite) ? (<motion.a href={link} className="bg-secondary mt-4 text-primary py-2 px-4 text-base font-semibold mr-4" whileHover={{ scale: 1.1, opacity: 0.8 }} transition={{ duration: 0.5 }}>
                             VISIT LIVE SITE
                         </motion.a>) : ("")
                     }
@@ -50,7 +50,7 @@ const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liv
                     {
 
                         (hasVideoLink) ? (
-                        <motion.a href={videolink} className="bg-secondary mt-4 text-primary py-2 px-4 text-base font-semibold mr-4 cursor-pointer" whileHover={{ translateX: 20, opacity: 0.8 }} transition={{ duration: 0.5 }}>
+                        <motion.a href={videolink} className="bg-secondary mt-4 text-primary py-2 px-4 text-base font-semibold mr-4 cursor-pointer" whileHover={{ scale: 1.1, opacity: 0.8 }} transition={{ duration: 0.5 }}>
                             SEE VIDEO 
                         </motion.a>) : ("")
                     }
