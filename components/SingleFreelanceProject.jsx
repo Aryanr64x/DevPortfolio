@@ -8,7 +8,7 @@ const SingleFreelanceProject = ({ tag1, tag2, tag3, info, title, link, image }) 
     
     return (
         <div >
-            <div className="flex flex-col relative flex-1">
+            <div className="flex flex-col relative flex-1 mt-8 sm:mt-0">
             <a href={(link)}>
                 <motion.img onMouseEnter={() => { setShowText(true) }} onMouseLeave={() => { setShowText(false) }} whileHover={{ translateX: 10, translateY: -10, opacity: 0.4 }} transition={{ duration: 0.5 }} className="rounded-md cursor-pointer"
                     src={image} alt="" />
