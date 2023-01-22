@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+body, html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 .name{
     letter-spacing: 20px;
 }
