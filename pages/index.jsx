@@ -13,6 +13,12 @@ export default function Home() {
         <div className="text-white wrapper">
             <Head>
                 <title>Aryan Saket</title>
+                <meta
+                 property="og:image"
+                content="/og.png"
+                />
+
+                <meta property="og:title" content="Aryan Saket" />
             </Head>
             <Hero />
             <Skills />
