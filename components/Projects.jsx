@@ -70,7 +70,7 @@ const Projects = ()=>{
                 <h2 className="text-3xl mt-64 sm:text-5xl lg:6xl text-center font-sourceCodePro text-secondary">
                     OTHER STATIC WEBSITES/BLOG
                 </h2>
-                <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-x-16 ">
+                <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-x-16 ">
                     <SingleFreelanceProject
                         title={"Neovision Marketing : (Client Project)"}
                         tag1={"Agency"}
