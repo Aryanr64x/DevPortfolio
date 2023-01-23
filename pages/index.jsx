@@ -10,7 +10,7 @@ export default function Home() {
 
     return (
 
-        <div className="text-white wrapper" style={{backgroundImage: "url('/herobgfiltercompressed.png')"}}>
+        <div className="text-white wrapper">
             <Head>
                 <title>Aryan Saket</title>
             </Head>
