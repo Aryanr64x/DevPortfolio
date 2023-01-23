@@ -24,8 +24,8 @@ const Skills = () => {
                         </p>
                         <br/>
                         <p>
-                            Above all, these tech skills are only depictive of my passion for software development,
-                            and I believe since I can adopt any other frontend/backend architecture !
+                        These skills only scratch the surface when talking about my passion for software development.
+                         I am confident in my ability to easily adopt other frontend or backend technologies that may be required for any particular project.
                         </p>
                     </div>
                 </div>
