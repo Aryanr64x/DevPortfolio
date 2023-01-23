@@ -11,16 +11,17 @@ const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liv
     }, [])
 
     const [showText, setShowText] = useState(false)
-    const r = ((reverse) ? "flex-col-reverse lg:flex-row-reverse" : "flex-col-reverse lg:flex-row");
-    const classname = "flex justify-between items-center gap-8 lg:gap-20 mt-32 " + r;
+    const r1 = (reverse) ? "md:order-2" : ""
+    const r2 = (reverse) ? "md:order-1" : ""
+    const classname = "grid  grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 mt-32 ";
     return (
         <div className={classname}>
-            <div className="flex flex-col flex-1  justify-center items-center lg:items-start" data-aos={(reverse) ? 'fade-left' : 'fade-right'}>
+            <div className={"flex flex-col flex-1 order-1 justify-center items-center lg:items-start "+r1} data-aos={(reverse) ? 'fade-left' : 'fade-right'}>
                 <div className="text-3xl sm:text-4xl font-sourceCodePro text-secondary">
                     {name}
                 </div>
                 <div className="mt-4 flex">
-                    <span className=" text-primary bg-tertiary font-semibold mr-4 px-2 py-1 rounded text-sm sm:text-base" >
+                    <span className=" text-primary  bg-tertiary font-semibold mr-4 px-2 py-1 rounded text-sm sm:text-base" >
                         {tag1}
                     </span>
                     <span className="text-primary bg-tertiary font-semibold mr-4  px-2 py-1 rounded text-sm sm:text-base">
@@ -59,7 +60,7 @@ const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liv
 
                 </div>
             </div>
-            <div className={'flex flex-col relative flex-1' + ((reverse) ? ' items-start' : ' items-end')} data-aos={(reverse) ? 'fade-right' : 'fade-left'}>
+            <div className={'flex flex-col justify-center relative order-2 flex-1 '+r2+' ' + ((reverse) ? ' items-start' : ' items-end')} data-aos={(reverse) ? 'fade-right' : 'fade-left'}>
                 <a href={(liveSite) ? (link) : (codeLink)}>
                     <motion.img onMouseEnter={() => { setShowText(true) }} onMouseLeave={() => { setShowText(false) }} whileHover={{ translateX: 10, translateY: -10, opacity: 0.4 }} transition={{ duration: 0.5 }} className="h-full rounded-md cursor-pointer"
                         src={image} alt="" />

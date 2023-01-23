@@ -2,7 +2,7 @@ import SingleSkill from "./SingleSkill";
 
 const Skills = () => {
     return (
-        <div className="font-sourceCodePro px-4 lg:px-20 xl:px-32">
+        <div className="font-sourceCodePro px-4 lg:px-20 xl:px-32 mt-32" >
             <div className="text-center text-secondary text-7xl ">
                 Skills
             </div>
