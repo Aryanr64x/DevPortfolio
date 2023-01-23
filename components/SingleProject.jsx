@@ -18,7 +18,7 @@ const SingleProject = ({ reverse, image, name, info, tag1, tag2, tag3, link, liv
         <div className={classname}>
             <div className={'flex flex-col justify-center relative order-1 flex-1 '+r2+' ' + ((reverse) ? ' items-start' : ' items-end')} data-aos={(reverse) ? 'fade-right' : 'fade-left'}>
                 <a href={(liveSite) ? (link) : (codeLink)}>
-                    <motion.img onMouseEnter={() => { setShowText(true) }} onMouseLeave={() => { setShowText(false) }} whileHover={{ translateX: 10, translateY: -10, opacity: 0.4 }} transition={{ duration: 0.5 }} className="h-full rounded-md cursor-pointer"
+                    <motion.img onMouseEnter={() => { setShowText(true) }} onMouseLeave={() => { setShowText(false) }} whileHover={{ translateX: 10, translateY: -10, opacity: 0.4 }} transition={{ duration: 0.5 }} className=" rounded-md cursor-pointer"
                         src={image} alt="" />
                     {
                         (showText) ? (
