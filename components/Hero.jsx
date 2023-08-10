@@ -29,14 +29,16 @@ const Hero = () => {
 
 
     return (
-        <div className="min-h-screen  text-center text-white flex flex-col items-center justify-center font-sourceCodePro px-4 md:px-16">
+        <div className="min-h-screen  text-center text-white flex flex-col  justify-center font-sourceCodePro px-4 md:px-16">
             <div className="grid  grid-cols-1 lg:grid-cols-2 ">
                 <div className="order-1 lg:order-2 flex justify-center items-center">
                     <img src="/avatar4.png"  className="rounded-full shadow-2xl border-4  border-primary shadow-black" alt="" />
                 </div>
                 <div className="order-2 lg:order-1 mt-4 lg:text-left">
-                    <h1 className="text-3xl md:text-5xl  lg:text-6xl  text-secondary">
+                    <h1 className="text-3xl md:text-5xl  lg:text-6xl  text-secondary ">
                         {text}
+
+                        
                     </h1>
                     <h2 className="mt-2  text-xl sm:text-3xl lg:text-4xl name">
                         {/* THIS IS <span className="text-secondary"> ARYAN SAKET </span> */}

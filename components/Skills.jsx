@@ -35,7 +35,7 @@ const Skills = () => {
                     <SingleSkill src="/tailwind.jpg" link = "https://tailwindcss.com/"/>
                     <SingleSkill src="/js.png" link="https://www.javascript.com/"/>
                     <SingleSkill src="/node.png" link="https://nodejs.org/en/"/>
-                    <SingleSkill src="/mongo.png" link="https://www.mongodb.com/home"/>
+                    <SingleSkill src="/prisma.png" link="https://www.prisma.io/"/>
                     <SingleSkill src="/html52.png" link="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" />
                     <SingleSkill src="/css.png" link="https://developer.mozilla.org/en-US/docs/Web/CSS"/>
                     <SingleSkill src="/figma.png" link="https://www.figma.com/"/>

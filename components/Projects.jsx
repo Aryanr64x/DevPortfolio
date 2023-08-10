@@ -25,6 +25,20 @@ const Projects = ()=>{
                 <SingleProject
                     hasVideoLink={false}
                     liveSite={true}
+                    codeLink={'https://github.com/Aryanr64x/JammyBackend'}
+                    image={'/projects/jammy.png'}
+                    name="Jammy: Collaborative Article Writing"
+                    info="This is a collaborative article writing website. Different people and jam over an idea, write it down and share it with the world"
+                    tag1="Socket.io"
+                    tag2="React JS"
+                    tag3="Prisma"
+                    link="https://jammyio.netlify.app/" />
+
+                    
+                <SingleProject
+                    hasVideoLink={false}
+                    liveSite={true}
+                    reverse={true}
                     codeLink={'https://github.com/Aryanr64x/nextport'}
                     image={'/projects/sakedes.png'}
                     name="Sakedes: Web Design Agency"
@@ -40,7 +54,7 @@ const Projects = ()=>{
                     videolink = {"https://youtu.be/8a1pxYPZQnM"}
                     image={'/projects/chatio2.png'}
                     liveSite={false}
-                    reverse={true}
+               
                     codeLink={'https://github.com/Aryanr64x/Chatio-React-Native-Chat-App'}
                     name="Chatio: RealTime Chat App"
                     info="This is a realtime chat app built in React Native. It uses Tailwind CSS in React Native for easy styling of things and websockets for realtime communication."
@@ -54,7 +68,7 @@ const Projects = ()=>{
                     videolink = {"https://youtu.be/5WXvpMVP2Bw"}
                     image={'/projects/doodlejump.png'}
                     liveSite={true}
-                    reverse={false}
+                    reverse={true}
                     codeLink={'https://github.com/Aryanr64x/DoodleSpaceJump'}
                     name="Doodle Space Jump Game"
                     info="This is a simple doodle jump like  game project built in javascript. The game was built without any JS Framework or Library , and explores advanced css positioning "
