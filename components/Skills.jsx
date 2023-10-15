@@ -20,7 +20,8 @@ const Skills = () => {
                         <br/>
                         <p>
                             For the backend I embrace NodeJS with the express framework along with
-                            MongoDB as the exclusive backend.
+                            Prisma and Mysql as an exclusive backend. Apart from that I also have knowledge of NOSQL 
+                            Databases like MongoDB
                         </p>
                         <br/>
                         <p>

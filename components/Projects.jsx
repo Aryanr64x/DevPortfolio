@@ -77,6 +77,20 @@ const Projects = ()=>{
                     tag3="Game"
                     link="https://doodlespacejump.netlify.app/" />
 
+                <SingleProject
+                    hasVideoLink={false}
+                    videolink = {"https://youtu.be/5WXvpMVP2Bw"}
+                    image={'/projects/bitdeforum.png'}
+                    liveSite={true}
+                    reverse={false}
+                    codeLink={'https://github.com/Aryanr64x/BitDeForumFrontend/'}
+                    name="FORUM DE BIT"
+                    info="This is a forum website built for my college BIT, Mesra. All latest events and happening are shared by the students in this website "
+                    tag1="React JS"
+                    tag2="Mongo DB"
+                    tag3="Mongoose"
+                    link="https://forumdebit.netlify.app/" />
+
 
             </div>
 
